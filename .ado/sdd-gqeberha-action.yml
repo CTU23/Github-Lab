@@ -1,1 +1,10 @@
+mame: first-workflow-on-github
+run-name: ${{github.actor}} very first workflow
+on: [push]
+ jobs:
+  check-the-version:
+  runs-on: ubuntu-latest
+  step:
+    - uses: actions/checkout@v3
+  
 
